@@ -3,6 +3,16 @@
   "displayName": "GitHub Push Button",
   "description": "Adds a status bar button that commits and pushes workspace changes to GitHub.",
   "version": "0.0.1",
+  "publisher": "syrthax",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Syrthax/ezpush.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Syrthax/ezpush/issues"
+  },
+  "homepage": "https://github.com/Syrthax/ezpush#readme",
   "engines": {
     "vscode": "^1.90.0"
   },
