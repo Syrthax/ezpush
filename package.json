@@ -1,0 +1,36 @@
+{
+  "name": "github-push-button",
+  "displayName": "GitHub Push Button",
+  "description": "Adds a status bar button that commits and pushes workspace changes to GitHub.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Source Control"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:githubPushButton.pushCode"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "githubPushButton.pushCode",
+        "title": "Push Code to GitHub",
+        "category": "GitHub Push Button"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "vscode:prepublish": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.5.3"
+  }
+}
